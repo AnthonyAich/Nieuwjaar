@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="javascript/scriptTussen.js"></script>
+    <script src="javascript/scriptsOvergang.js"></script>
+
+</head>
+
+<body>
+
+    <div id="dia1">
+        <p id="dag">365</p>
+        <div class="zon" id="zon"></div>
+        <div class="tekstBallon">
+            <p id="tekstBallonetjeP">Hey Mara, er waren <span id="dagBegin">365</span> dagen in 2020. En sommige waren
+                echt
+                wel moeilijk dit jaar.
+                Maar
+                ik (de sneeuwman)
+                wil toch ff wat leuke
+                dingen van 2020 weer naar boven halen!</p>
+            <button id="buttonStart" onclick="intervalStarten()">Tik om te beginnen</button>
+        </div>
+        <p id="maand"></p>
+
+        <img src="images/Sneeuwman.png" alt="" id="bounce">
+
+    </div>
+    <div id="dia2">
+        <p onclick="naarDia3();" class="tik"> Tik om naar Diksmuide te rijden<img
+                style="transform: translate3d(-10px, 0px 0px);" src="images/arrow-right.png" alt="">
+        </p>
+        <div class="lucht">
+            <h1>1 Januari</h1>
+            <p>Nieuwjaar in Funrnevent Veurne</p>
+            <img src="images/Furnevent.png" alt="">
+        </div>
+        <div class="grond">
+            <img src="images/Taxi.png" alt="">
+        </div>
+    </div>
+    <div id="dia3">
+        <div class="jarneEmoji">
+            <h2>Jarne</h2>
+            <img src="images/happy.png" id="happy" alt="">
+            <img src="images/TD2.png" id="TD2" alt="">
+        </div>
+        <h2>
+            Afstand tot Diksmuide
+        </h2>
+        <div class="teRijden">
+            <div class="gereden"></div>
+        </div>
+        <div class="lijnen">
+            <div class="maraHuis"></div>
+        </div>
+        <p>Huisje van Mara</p>
+
+
+        <div onclick="tekstjes()" style="position: absolute; right: 25px; bottom:25px; color: white;">
+            Tik hier om verder te gaan met de taxi </div>
+    </div>
+    <div id="dia4">
+        <h2>Jarne 300 meter voor we weer stoppen</h2>
+        <img src="images/braak.png" alt="">
+        <h2 class="moraal">
+            Moraal van het verhaal, stap niet in een auto als je ultra dronken bent :)
+        </h2>
+        <p onclick="naarDia5();" class="tik"> Tik hier om naar de volgende "herinnering" te gaan
+        </p>
+    </div>
+    <div id="dia5">
+        <h1>
+            Verjaardagsfeestje
+        </h1>
+        <h2 class="datum">
+            31 Januari
+        </h2>
+        <img src="images/Marie.png" alt="">
+        <img src="images/Sebo.png" alt="">
+        <div onclick="naarDia6()" style="position: absolute; right: 25px; bottom:25px; color: white;">
+            Tik om naar het feestje te gaan </div>
+    </div>
+    <div id="dia6">
+        <h1>Eerste keer dat ik het kot van Mara en Marie zie <h2>(ik was mega blij :)))</h2>
+        </h1>
+        <img src="images/kotMara.png" alt="">
+        <div onclick="naarDia7()" style="position: absolute; right: 25px; bottom:25px; color: white;">
+            Tik om naar de Overpoort te gaan </div>
+    </div>
+    <div id="dia7">
+        <h1>Overpoort</h1>
+        <img src="images/Cuba.png" alt="">
+        <img src="images/contrast.png" alt="">
+        <div onclick="naarVolgendeNa7()" style="position: absolute; right: 10px; bottom:25px; color: white;">
+            Tik om terug te gaan, er was toch bijna niets open </div>
+    </div>
+    <div id="volgendeNa7">
+        <img class="maan" src="images/maan.png" alt="">
+        <h1>De groep gaat gaan slapen</h1>
+        <img class="kot" src="images/kotMara.png" alt="">
+        <p onclick="naarDia8();" class="tik" style="position: absolute; right: 10px; bottom:25px; color: white;"> Tik
+            hier om naar de volgende "herinnering" te gaan
+        </p>
+    </div>
+    <div id="dia8">
+        <h1 id="titelDia8">Anthony krijgt een berichtje</h1>
+        <h2 id="datumDia8">6 Juli</h2>
+        <img onclick="naarPunten1()" src="images/notif1.png" id="notif1" alt="">
+        <img onclick="naarPunten2()" src="images/punten1.png" id="punten1" alt="">
+        <img onclick="naarPunten3()" src="images/punten2.png" id="punten2" alt="">
+        <img onclick="verderGaan()" src="images/punten3.png" id="punten3" alt="">
+        <img onclick="naarPunten4()" src="images/notif3.png" id="notif3" alt="">
+        <img onclick="verderSneeuwman()" src="images/punten4.png" id="punten4" alt="">
+        <div id="notif" style="position: absolute; right: 10px; bottom:25px; color: white;">
+            Tik op de telefoon om te kijken wat het is </div>
+        <div id="schrijf" style="position: absolute; right: 10px; bottom:25px; color: white;">
+            Tik op de telefoon zodat Anthony iets schrijft</div>
+        <div id="antwoord" style="position: absolute; right: 10px; bottom:25px; color: white;">
+            Tik op de telefoon om te kijken wat het antwoord is</div>
+        <div id="verder" style="position: absolute; right: 10px; bottom:25px; color: white;">
+            Tik op de telefoon om verder te gaan</div>
+    </div>
+
+    <div id="dia9">
+        <div class="tekstBallon">
+            <p id="tekstBallonetjeP">En zo heeft Mara in haar eerste jaar geen enkel herexamen gehad!!! (dit noemt men
+                slim zijn)</p>
+        </div>
+        <img src="images/Sneeuwman.png" alt="">
+        <p onclick="naarDia10();" class="tik" style="position: absolute; right: 10px; bottom:25px; color: #3f3f46;"> Tik
+            hier om naar de volgende "herinnering" te gaan
+        </p>
+    </div>
+    <div id="dia10">
+        <h1>Verjaardag Mara</h1>
+        <h2>7 Juli</h2>
+        <img onclick="naarFoto3();" src="images/BrilDP.png" class="bril" id="bril" alt="">
+
+        <img src="images/Plant.png" onclick="naarDia11();" class="plant" id="plant" alt="">
+        <img src="images/DiotVNeck.png" onclick="naarFoto2();" class="dior" id="dior" alt="">
+
+        <p style="position: absolute; right: 10px; bottom:25px; color: white;"> Tik
+            op de tekening om het volgende te zien
+        </p>
+    </div>
+    <div id="dia11">
+        <h1>Anders is er niet echt iets gebeurd :(</h1>
+        <h2>Hopelijk zal volgend jaar veel leuker zijn!</h2>
+        <h2>HNY!!!</h2>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+        width: 100vw;
+        height: 100vh;
+}
+img {
+    height: 40vh;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-100px);
+    }
+
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+#dia1 {
+    background-color: lightblue;
+}
+#dia2 {
+     display: none;
+}
+#dia3 {
+    display: none;
+}
+
+#dia4 {
+    display: none;
+}
+#dia5 {
+    display: none;
+}
+#dia6 {
+    display: none;
+}
+#dia7 {
+    display: none;
+}
+
+
+
+
+

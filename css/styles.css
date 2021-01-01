@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#dia1 {
+  display: block;
+  background-color: lightblue;
+}
+
+#dia1 #dag {
+  color: red;
+  position: absolute;
+  top: 21.1vh;
+  left: 57.8vw;
+  z-index: 60;
+  display: none;
+}
+
+#dia1 #maand {
+  position: absolute;
+  top: 35vh;
+  color: red;
+  left: 30vw;
+  font-size: 40px;
+}
+
+#dia1 .zon {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 15vw;
+  height: 7vh;
+  border-radius: 3.5vh;
+  background-color: yellow;
+}
+
+#dia1 img {
+  height: 40vh;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  margin-left: 5vw;
+  margin-top: 45vh;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#dia1 .tekstBallon {
+  background-color: white;
+  width: 75vw;
+  left: 12.5vw;
+  top: 20vh;
+  position: absolute;
+  border-radius: 30px;
+}
+
+#dia1 .tekstBallon span {
+  color: red;
+}
+
+#dia1 .tekstBallon button {
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: Bold;
+  padding: 5px;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 3%;
+}
+
+#dia1 .tekstBallon p {
+  margin-top: 3%;
+  padding: 0px 30px;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1, 0.09) translateY(-5);
+            transform: scale(1, 0.09) translateY(-5);
+  }
+  10% {
+    -webkit-transform: scale(0.9, 1) translateY(0);
+            transform: scale(0.9, 1) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(1, 1.1) translateY(0);
+            transform: scale(1, 1.1) translateY(0);
+  }
+  50% {
+    -webkit-transform: scale(1, 1.1) translateY(5px);
+            transform: scale(1, 1.1) translateY(5px);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(3px);
+            transform: scale(1, 1) translateY(3px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1, 0.09) translateY(-5);
+            transform: scale(1, 0.09) translateY(-5);
+  }
+  10% {
+    -webkit-transform: scale(0.9, 1) translateY(0);
+            transform: scale(0.9, 1) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(1, 1.1) translateY(0);
+            transform: scale(1, 1.1) translateY(0);
+  }
+  50% {
+    -webkit-transform: scale(1, 1.1) translateY(5px);
+            transform: scale(1, 1.1) translateY(5px);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(3px);
+            transform: scale(1, 1) translateY(3px);
+  }
+}
+
+#dia2 {
+  display: none;
+}
+
+#dia2 .tik {
+  cursor: pointer;
+  color: #3f3f46;
+  position: absolute;
+  right: 5px;
+  bottom: 2vh;
+}
+
+#dia2 .tik img {
+  width: 35px;
+}
+
+#dia2 .lucht {
+  background-color: #0c1445;
+}
+
+#dia2 img {
+  width: 90vw;
+  margin-top: 40vh;
+  margin-left: 5vw;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#dia2 .grond {
+  background: grey;
+  width: 100vw;
+  height: 60vh;
+}
+
+#dia2 .grond img {
+  margin-top: 25px;
+  width: 48vw;
+  margin-left: 50vw;
+  -webkit-animation: taxi 3s;
+          animation: taxi 3s;
+}
+
+#dia2 h1 {
+  padding-top: 25px;
+  text-align: center;
+  color: red;
+}
+
+#dia2 p {
+  text-align: center;
+  color: yellow;
+}
+
+@-webkit-keyframes taxi {
+  0% {
+    margin-left: 90vw;
+  }
+  10% {
+    margin-left: 85vw;
+  }
+  30% {
+    margin-left: 80vw;
+  }
+  40% {
+    margin-left: 77vw;
+  }
+  50% {
+    margin-left: 75vw;
+  }
+  60% {
+    margin-left: 70vw;
+  }
+  70% {
+    margin-left: 65vw;
+  }
+  80% {
+    margin-left: 60vw;
+  }
+  90% {
+    margin-left: 55vw;
+  }
+  100% {
+    margin-left: 50vw;
+  }
+}
+
+@keyframes taxi {
+  0% {
+    margin-left: 90vw;
+  }
+  10% {
+    margin-left: 85vw;
+  }
+  30% {
+    margin-left: 80vw;
+  }
+  40% {
+    margin-left: 77vw;
+  }
+  50% {
+    margin-left: 75vw;
+  }
+  60% {
+    margin-left: 70vw;
+  }
+  70% {
+    margin-left: 65vw;
+  }
+  80% {
+    margin-left: 60vw;
+  }
+  90% {
+    margin-left: 55vw;
+  }
+  100% {
+    margin-left: 50vw;
+  }
+}
+
+#dia3 {
+  display: none;
+  background-color: #3f3f46;
+  width: 100vw;
+  height: 100vh;
+}
+
+#dia3 h2 {
+  margin-top: 45vh;
+  text-align: center;
+  color: white;
+}
+
+#dia3 .teRijden {
+  width: 90vw;
+  height: 5vh;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+#dia3 .gereden {
+  background-color: yellowgreen;
+  height: 5vh;
+  width: 95%;
+  -webkit-animation: rijden 5s;
+          animation: rijden 5s;
+}
+
+@-webkit-keyframes rijden {
+  0% {
+    width: 0%;
+  }
+  10% {
+    width: 10%;
+  }
+  20% {
+    width: 20%;
+  }
+  30% {
+    width: 30%;
+  }
+  40% {
+    width: 40%;
+  }
+  50% {
+    width: 50%;
+  }
+  60% {
+    width: 60%;
+  }
+  70% {
+    width: 70%;
+  }
+  80% {
+    width: 80%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes rijden {
+  0% {
+    width: 0%;
+  }
+  10% {
+    width: 10%;
+  }
+  20% {
+    width: 20%;
+  }
+  30% {
+    width: 30%;
+  }
+  40% {
+    width: 40%;
+  }
+  50% {
+    width: 50%;
+  }
+  60% {
+    width: 60%;
+  }
+  70% {
+    width: 70%;
+  }
+  80% {
+    width: 80%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+#dia3 .lijnen {
+  width: 90vw;
+  height: 30px;
+  margin-left: 5vw;
+}
+
+#dia3 .lijnen .maraHuis {
+  width: 4px;
+  background-color: yellowgreen;
+  height: 30px;
+  margin-left: calc(95% - 2px);
+  -webkit-animation: maraHuis 5s;
+          animation: maraHuis 5s;
+}
+
+@-webkit-keyframes maraHuis {
+  0% {
+    background-color: white;
+  }
+  99% {
+    background-color: white;
+  }
+  100% {
+    background-color: yellowgreen;
+  }
+}
+
+@keyframes maraHuis {
+  0% {
+    background-color: white;
+  }
+  99% {
+    background-color: white;
+  }
+  100% {
+    background-color: yellowgreen;
+  }
+}
+
+#dia3 p {
+  color: white;
+  margin-left: 75%;
+  text-align: center;
+}
+
+#dia3 .ballon {
+  position: absolute;
+  right: auto;
+  color: white;
+  display: none;
+}
+
+#dia3 .tekstBallonMara {
+  top: 25vh;
+  left: 25%;
+}
+
+#dia3 .tekstBallonJarne {
+  top: 85vh;
+  left: 15%;
+}
+
+#dia3 .tekstBallonNilan {
+  top: 75vh;
+  left: 25%;
+}
+
+#dia3 .jarneEmoji {
+  position: absolute;
+  left: 32.5vw;
+  top: -45vh;
+}
+
+#dia3 .jarneEmoji h2 {
+  text-align: left;
+  margin-left: calc(17.5vw - 30px);
+}
+
+#dia3 .jarneEmoji img {
+  width: 35vw;
+  display: none;
+}
+
+#dia3 .jarneEmoji #happy {
+  display: block;
+}
+
+#dia4 {
+  display: none;
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+}
+
+#dia4 h2 {
+  margin-top: 25vh;
+  padding: 0px 10vw;
+  color: white;
+  text-align: center;
+}
+
+#dia4 img {
+  margin-left: 35vw;
+  width: 35vw;
+}
+
+#dia4 .moraal {
+  margin-top: 20vh;
+}
+
+#dia4 .tik {
+  margin-top: 12vh;
+  color: #ffffff;
+  text-align: center;
+}
+
+#dia5 {
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+#dia5 img {
+  width: 75vw;
+  margin: 5vh 12.5vw;
+}
+
+#dia5 h1 {
+  text-align: center;
+  color: yellow;
+}
+
+#dia5 h2 {
+  color: red;
+  text-align: center;
+}
+
+#dia6 {
+  display: none;
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+}
+
+#dia6 h1 {
+  text-align: center;
+  color: white;
+}
+
+#dia6 h2 {
+  text-align: center;
+  color: yellow;
+}
+
+#dia6 img {
+  width: 75vw;
+  margin: 15vh 12.5vw;
+}
+
+#dia7 {
+  display: none;
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+}
+
+#dia7 h1 {
+  color: white;
+  text-align: center;
+}
+
+#dia7 img {
+  width: 75vw;
+  margin: 6vh 12.5vw;
+}
+
+#dia8 {
+  display: none;
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+}
+
+#dia8 h1 {
+  text-align: center;
+  color: white;
+}
+
+#dia8 h2 {
+  color: red;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+#dia8 img {
+  width: 75vw;
+  margin: 0px 12.5vw;
+}
+
+#dia8 #punten1 {
+  display: none;
+}
+
+#dia8 #punten2 {
+  display: none;
+}
+
+#dia8 #punten3 {
+  display: none;
+}
+
+#dia8 #notif3 {
+  display: none;
+}
+
+#dia8 #punten4 {
+  display: none;
+}
+
+#dia8 #schrijf {
+  display: none;
+}
+
+#dia8 #antwoord {
+  display: none;
+}
+
+#dia8 #verder {
+  display: none;
+}
+
+#dia9 {
+  display: none;
+}
+
+#volgendeNa7 {
+  display: none;
+  background-color: #3f3f46;
+  width: 100vw;
+  height: 100vh;
+}
+
+#volgendeNa7 h1 {
+  color: white;
+  text-align: center;
+}
+
+#volgendeNa7 .maan {
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+  width: 10vw;
+}
+
+#volgendeNa7 .kot {
+  width: 75vw;
+  margin: 25vh 12.5vw;
+}
+
+#dia9 {
+  display: none;
+  background-color: lightblue;
+}
+
+#dia9 .tekstBallon {
+  background-color: white;
+  width: 75vw;
+  left: 12.5vw;
+  top: 20vh;
+  position: absolute;
+  border-radius: 30px;
+}
+
+#dia9 img {
+  height: 40vh;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  margin-left: 5vw;
+  margin-top: 45vh;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+#dia9 p {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 0px 30px;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1, 0.09) translateY(-5);
+            transform: scale(1, 0.09) translateY(-5);
+  }
+  10% {
+    -webkit-transform: scale(0.9, 1) translateY(0);
+            transform: scale(0.9, 1) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(1, 1.1) translateY(0);
+            transform: scale(1, 1.1) translateY(0);
+  }
+  50% {
+    -webkit-transform: scale(1, 1.1) translateY(5px);
+            transform: scale(1, 1.1) translateY(5px);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(3px);
+            transform: scale(1, 1) translateY(3px);
+  }
+}
+
+#dia10 {
+  display: none;
+  background-color: #3f3f46;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+#dia10 h1 {
+  color: white;
+}
+
+#dia10 h2 {
+  color: red;
+}
+
+#dia10 img {
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+#dia10 .bril {
+  display: block;
+  margin-top: 30vh;
+  width: 75vw;
+  margin-left: 12.5vw;
+}
+
+#dia10 .dior {
+  display: none;
+  width: 75vw;
+  margin-left: 12.5vw;
+  margin-top: 25vh;
+}
+
+#dia10 .plant {
+  margin-top: 15vh;
+  display: none;
+  width: 75vw;
+  margin-left: 12.5vw;
+}
+
+#dia11 {
+  display: none;
+  background-color: #3f3f46;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+#dia11 h1 {
+  margin-top: 22vh;
+  margin-bottom: 12vh;
+  color: white;
+}
+
+#dia11 h2 {
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */

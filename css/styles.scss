@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#dia1 {
+  display: block;
+  background-color: lightblue;
+  #dag {
+    color: red;
+    position: absolute;
+    top: 21.1vh;
+    left: 57.8vw;
+    z-index: 60;
+    display: none;
+  }
+  #maand {
+    position: absolute;
+    top: 35vh;
+    color: red;
+    left: 30vw;
+    font-size: 40px;
+  }
+  .zon {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    width: 15vw;
+    height: 7vh;
+    border-radius: 3.5vh;
+    background-color: yellow;
+  }
+  img {
+    height: 40vh;
+    animation: bounce 2s infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    margin-left: 5vw;
+    margin-top: 45vh;
+    transform: translateY(10px);
+  }
+  .tekstBallon {
+    background-color: white;
+    width: 75vw;
+    left: 12.5vw;
+    top: 20vh;
+    position: absolute;
+    border-radius: 30px;
+    span {
+      color: red;
+    }
+
+    button {
+      background-color: red;
+      border: none;
+      color: white;
+      font-weight: Bold;
+      padding: 5px;
+      width: 50%;
+      margin-left: 25%;
+      margin-bottom: 3%;
+    }
+
+    p {
+      margin-top: 3%;
+      padding: 0px 30px;
+    }
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1, 0.09) translateY(-5);
+    }
+
+    10% {
+      transform: scale(0.9, 1) translateY(0);
+    }
+
+    30% {
+      transform: scale(1, 1.1) translateY(0);
+    }
+
+    50% {
+      transform: scale(1, 1.1) translateY(5px);
+    }
+
+    100% {
+      transform: scale(1, 1) translateY(3px);
+    }
+  }
+}
+
+#dia2 {
+  display: none;
+  .tik {
+    cursor: pointer;
+    color: #3f3f46;
+    position: absolute;
+    right: 5px;
+    bottom: 2vh;
+    img {
+      width: 35px;
+    }
+  }
+  .lucht {
+    background-color: #0c1445;
+  }
+  img {
+    width: 90vw;
+    margin-top: 40vh;
+    margin-left: 5vw;
+    transform: translateY(10px);
+  }
+  .grond {
+    background: grey;
+    width: 100vw;
+    height: 60vh;
+    img {
+      margin-top: 25px;
+      width: 48vw;
+      margin-left: 50vw;
+      animation: taxi 3s;
+    }
+  }
+  h1 {
+    padding-top: 25px;
+    text-align: center;
+    color: red;
+  }
+  p {
+    text-align: center;
+    color: yellow;
+  }
+
+  @keyframes taxi {
+    0% {
+      margin-left: 90vw;
+    }
+
+    10% {
+      margin-left: 85vw;
+    }
+
+    30% {
+      margin-left: 80vw;
+    }
+    40% {
+      margin-left: 77vw;
+    }
+    50% {
+      margin-left: 75vw;
+    }
+    60% {
+      margin-left: 70vw;
+    }
+    70% {
+      margin-left: 65vw;
+    }
+    80% {
+      margin-left: 60vw;
+    }
+    90% {
+      margin-left: 55vw;
+    }
+    100% {
+      margin-left: 50vw;
+    }
+  }
+}
+
+#dia3 {
+  display: none;
+  background-color: #3f3f46;
+  width: 100vw;
+  height: 100vh;
+  h2 {
+    margin-top: 45vh;
+    text-align: center;
+    color: white;
+  }
+  .teRijden {
+    width: 90vw;
+    height: 5vh;
+    background: #ffffff;
+    margin: 0 auto;
+  }
+  .gereden {
+    background-color: yellowgreen;
+    height: 5vh;
+    width: 95%;
+    animation: rijden 5s;
+  }
+
+  @keyframes rijden {
+    0% {
+      width: 0%;
+    }
+
+    10% {
+      width: 10%;
+    }
+
+    20% {
+      width: 20%;
+    }
+    30% {
+      width: 30%;
+    }
+    40% {
+      width: 40%;
+    }
+    50% {
+      width: 50%;
+    }
+    60% {
+      width: 60%;
+    }
+    70% {
+      width: 70%;
+    }
+    80% {
+      width: 80%;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+
+  .lijnen {
+    width: 90vw;
+    height: 30px;
+    margin-left: 5vw;
+    .maraHuis {
+      width: 4px;
+      background-color: yellowgreen;
+      height: 30px;
+      margin-left: calc(95% - 2px);
+      animation: maraHuis 5s;
+    }
+    @keyframes maraHuis {
+      0% {
+        background-color: white;
+      }
+      99% {
+        background-color: white;
+      }
+      100% {
+        background-color: yellowgreen;
+      }
+    }
+  }
+  p {
+    color: white;
+    margin-left: 75%;
+    text-align: center;
+  }
+
+  .ballon {
+    position: absolute;
+    right: auto;
+    color: white;
+    display: none;
+  }
+  .tekstBallonMara {
+    top: 25vh;
+    left: 25%;
+  }
+  .tekstBallonJarne {
+    top: 85vh;
+    left: 15%;
+  }
+  .tekstBallonNilan {
+    top: 75vh;
+    left: 25%;
+  }
+  .jarneEmoji {
+    position: absolute;
+    left: 32.5vw;
+    top: -45vh;
+    h2 {
+      text-align: left;
+      margin-left: calc(17.5vw - 30px);
+    }
+    img {
+      width: 35vw;
+      display: none;
+    }
+    #happy {
+      display: block;
+    }
+  }
+}
+
+#dia4 {
+  display: none;
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+  h2 {
+    margin-top: 25vh;
+    padding: 0px 10vw;
+    color: white;
+    text-align: center;
+  }
+  img {
+    margin-left: 35vw;
+    width: 35vw;
+  }
+  .moraal {
+    margin-top: 20vh;
+  }
+  .tik {
+    margin-top: 12vh;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+#dia5 {
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  img {
+    width: 75vw;
+    margin: 5vh 12.5vw;
+  }
+  h1 {
+    text-align: center;
+    color: yellow;
+  }
+  h2 {
+    color: red;
+    text-align: center;
+  }
+}
+
+#dia6 {
+  display: none;
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  h2 {
+    text-align: center;
+    color: yellow;
+  }
+  img {
+    width: 75vw;
+    margin: 15vh 12.5vw;
+  }
+}
+
+#dia7 {
+  display: none;
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  img {
+    width: 75vw;
+    margin: 6vh 12.5vw;
+  }
+}
+#dia8 {
+  display: none;
+  background-color: #3f3f46;
+  height: 100vh;
+  width: 100vw;
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  img {
+    width: 75vw;
+    margin: 0px 12.5vw;
+  }
+  #punten1 {
+    display: none;
+  }
+  #punten2 {
+    display: none;
+  }
+  #punten3 {
+    display: none;
+  }
+  #notif3 {
+    display: none;
+  }
+  #punten4 {
+    display: none;
+  }
+  #schrijf {
+    display: none;
+  }
+  #antwoord {
+    display: none;
+  }
+  #verder {
+    display: none;
+  }
+}
+#dia9 {
+  display: none;
+}
+#volgendeNa7 {
+  display: none;
+  background-color: #3f3f46;
+  width: 100vw;
+  height: 100vh;
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  .maan {
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+    width: 10vw;
+  }
+  .kot {
+    width: 75vw;
+    margin: 25vh 12.5vw;
+  }
+}
+#dia9 {
+  display: none;
+  background-color: lightblue;
+
+  .tekstBallon {
+    background-color: white;
+    width: 75vw;
+    left: 12.5vw;
+    top: 20vh;
+    position: absolute;
+    border-radius: 30px;
+  }
+  img {
+    height: 40vh;
+    animation: bounce 2s infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    margin-left: 5vw;
+    margin-top: 45vh;
+    transform: translateY(10px);
+  }
+  p {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 0px 30px;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1, 0.09) translateY(-5);
+    }
+
+    10% {
+      transform: scale(0.9, 1) translateY(0);
+    }
+
+    30% {
+      transform: scale(1, 1.1) translateY(0);
+    }
+
+    50% {
+      transform: scale(1, 1.1) translateY(5px);
+    }
+
+    100% {
+      transform: scale(1, 1) translateY(3px);
+    }
+  }
+}
+
+#dia10 {
+  display: none;
+  background-color: #3f3f46;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  h1 {
+    color: white;
+  }
+  h2 {
+    color: red;
+  }
+  img {
+    width: 90vw;
+    margin-left: 5vw;
+  }
+  .bril {
+    display: block;
+    margin-top: 30vh;
+    width: 75vw;
+    margin-left: 12.5vw;
+  }
+  .dior {
+    display: none;
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-top: 25vh;
+  }
+  .plant {
+    margin-top: 15vh;
+    display: none;
+    width: 75vw;
+    margin-left: 12.5vw;
+  }
+}
+#dia11 {
+  display: none;
+  background-color: #3f3f46;
+
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  h1 {
+    margin-top: 22vh;
+    margin-bottom: 12vh;
+    color: white;
+  }
+  h2 {
+    color: red;
+  }
+}
